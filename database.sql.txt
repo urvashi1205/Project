@@ -1,0 +1,52 @@
+﻿-- phpMyAdmin SQL Dump
+-- version 4.9.0.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jul 15, 2019 at 12:36 PM
+-- Server version: 10.3.16-MariaDB
+-- PHP Version: 7.3.7
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `project`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `employee`
+--
+
+CREATE TABLE `employee` (
+  `FirstName` varchar(20) NOT NULL,
+  `LastName` varchar(20) NOT NULL,
+  `Age` int(11) NOT NULL,
+  `Profession` varchar(20) NOT NULL,
+  `Gender` char(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `employee`
+--
+
+INSERT INTO `employee` (`FirstName`, `LastName`, `Age`, `Profession`, `Gender`) VALUES
+('Urvashi', 'Dhingra', 20, 'Student', 'F'),
+('Nikita', 'Thapar', 23, 'Interior Designer', 'F'),
+('Alden', 'Noronha', 20, 'Athlete', 'M'),
+('Vikram', 'Dhingra', 43, 'Engineer', 'M');
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
